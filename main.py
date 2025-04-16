@@ -1,11 +1,11 @@
 import os
 import shutil
 
-downloads_path = r"C:\Users\jjohn\Downloads"
+DOWNLOADS_PATH = r"C:\Users\jjohn\Downloads"
 count = 0
 
-for file in os.listdir(downloads_path):
-    file_path = f"{downloads_path}\{file}"
+for file in os.listdir(DOWNLOADS_PATH):
+    file_path = f"{DOWNLOADS_PATH}\{file}"
 
     if os.path.isfile(file_path):
         os.remove(file_path)
